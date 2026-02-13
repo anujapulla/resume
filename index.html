@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anuja Pulla — Senior IT Program & Product Manager</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a2f;
+      --ink:#eaf0ff;
+      --muted:#b7c4e3;
+      --line:rgba(255,255,255,.12);
+      --accent:#66e3ff;
+      --accent2:#a78bfa;
+      --chip:#132446;
+      --link:#7dd3fc;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(900px 500px at 15% 10%, rgba(102,227,255,.15), transparent 60%),
+                  radial-gradient(900px 500px at 85% 20%, rgba(167,139,250,.14), transparent 60%),
+                  var(--bg);
+      color:var(--ink);
+      line-height:1.45;
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{
+      max-width: 980px;
+      margin: 36px auto;
+      padding: 0 18px 40px;
+    }
+    .topbar{
+      display:flex;
+      gap:16px;
+      align-items:flex-start;
+      justify-content:space-between;
+      padding: 22px 22px;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border-radius: 18px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 18px 45px rgba(0,0,0,.25);
+    }
+    .name{
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing:.2px;
+      margin:0 0 6px;
+    }
+    .headline{
+      margin:0;
+      font-size: 14px;
+      font-weight: 650;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .9px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 7px 10px;
+      border:1px solid var(--line);
+      background: rgba(19,36,70,.35);
+      border-radius: 999px;
+      white-space:nowrap;
+    }
+    .badge{
+      display:inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(102,227,255,.20), rgba(167,139,250,.18));
+      border:1px solid var(--line);
+      font-size: 12px;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    .grid{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 18px;
+    }
+    @media (max-width: 860px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    .card{
+      border:1px solid var(--line);
+      background: rgba(15,26,47,.72);
+      border-radius: 18px;
+      padding: 18px 18px;
+      box-shadow: 0 18px 45px rgba(0,0,0,.22);
+    }
+    .section-title{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      margin:0 0 12px;
+      font-size: 13px;
+      letter-spacing: .9px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .divider{
+      height:1px;
+      background: var(--line);
+      margin: 14px 0;
+    }
+    .summary{
+      margin: 0;
+      font-size: 14.5px;
+      color: rgba(234,240,255,.92);
+    }
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style:none;
+    }
+    .chips li{
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(19,36,70,.60);
+      border:1px solid var(--line);
+      color: rgba(234,240,255,.92);
+      font-size: 12.5px;
+    }
+
+    .role{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:10px;
+      margin-top: 6px;
+    }
+    .role h3{
+      margin:0;
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .role .org{
+      color: var(--muted);
+      font-weight: 650;
+      font-size: 13px;
+      margin-top: 2px;
+    }
+    .role .dates{
+      font-size: 12.5px;
+      color: var(--muted);
+      white-space:nowrap;
+      margin-top: 2px;
+    }
+    .role-desc{
+      margin: 10px 0 0;
+      color: rgba(234,240,255,.90);
+      font-size: 14px;
+    }
+    ul.bullets{
+      margin: 10px 0 0 18px;
+      padding:0;
+      color: rgba(234,240,255,.90);
+      font-size: 14px;
+    }
+    ul.bullets li{margin: 6px 0}
+    .subhead{
+      margin: 12px 0 6px;
+      color: var(--muted);
+      font-weight: 750;
+      font-size: 12.5px;
+      text-transform: uppercase;
+      letter-spacing:.8px;
+    }
+
+    .edu-item, .cert-item, .link-item{
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(19,36,70,.40);
+      margin: 10px 0 0;
+    }
+    .edu-item strong{display:block}
+    .small{
+      color: var(--muted);
+      font-size: 12.5px;
+      margin-top: 2px;
+    }
+
+    /* Print */
+    @media print{
+      :root{
+        --bg:#ffffff;
+        --card:#ffffff;
+        --ink:#0b1220;
+        --muted:#334155;
+        --line:#e5e7eb;
+        --chip:#f1f5f9;
+        --link:#0ea5e9;
+      }
+      body{background:#fff}
+      .wrap{margin:0; max-width:100%; padding: 0}
+      .topbar,.card{box-shadow:none; backdrop-filter:none}
+      a{color: #0ea5e9; text-decoration:none}
+      .badge{background:#f1f5f9}
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="topbar">
+      <div>
+        <h1 class="name">Anuja Pulla</h1>
+        <p class="headline">Senior IT Program &amp; Product Manager | AI Adoption Leader | Enterprise Transformation | SaaS &amp; CRM Platforms</p>
+
+        <div class="meta" aria-label="Contact">
+          <span class="pill">📍 Atlanta, Georgia 30024, United States</span>
+          <a class="pill" href="tel:+14047897832">📞 404-789-7832</a>
+          <a class="pill" href="mailto:anuja.pulla@gmail.com">✉️ anuja.pulla@gmail.com</a>
+          <span class="pill">🪪 Green Card Holder</span>
+          <a class="pill" href="https://www.linkedin.com/in/anuja-pulla-43373012/" target="_blank" rel="noreferrer">🔗 LinkedIn</a>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-end;">
+        <span class="badge">AI Adoption • CRM/SaaS • Global Programs</span>
+        <span class="badge">Agile / Scrum / SAFe • M&amp;A Integration</span>
+      </div>
+    </header>
+
+    <section class="grid">
+      <!-- LEFT COLUMN -->
+      <div class="card">
+        <h2 class="section-title">Profile</h2>
+        <p class="summary">
+          Senior IT Program and Product Manager with 20+ years of experience leading enterprise-scale technology
+          transformation initiatives across CRM, SaaS, ERP, and AI-enabled platforms. Proven track record delivering
+          complex global programs from strategy through execution while aligning technology solutions with measurable
+          business outcomes. Currently leading AI adoption initiatives at Verint, driving integration of AI capabilities
+          into enterprise workflows to enhance customer experience, operational efficiency, and data-driven decision-making.
+          Experienced M&amp;A Integration Program Manager, leading post-acquisition technology and operational integration to
+          accelerate synergy realization and ensure seamless organizational alignment. Expert in bridging business strategy and
+          technical delivery — translating complex requirements into scalable solutions through Agile methodologies, stakeholder
+          alignment, and disciplined program governance.
+        </p>
+
+        <div class="divider"></div>
+
+        <h2 class="section-title">Professional Experience</h2>
+
+        <!-- Role 1 -->
+        <div class="role">
+          <div>
+            <h3>Senior IT Program &amp; Product Manager / AI Adoption Lead</h3>
+            <div class="org">Verint Systems</div>
+          </div>
+          <div class="dates">2011 – Present</div>
+        </div>
+
+        <p class="role-desc">
+          Lead enterprise technology initiatives focused on SaaS platforms, CRM systems, and AI-driven transformation programs within customer engagement environments.
+        </p>
+
+        <div class="subhead">Key Contributions</div>
+        <ul class="bullets">
+          <li>Lead AI adoption initiatives integrating AI capabilities into enterprise workflows to improve customer engagement, operational efficiency, and analytics-driven decision making.</li>
+          <li>Define product strategy and roadmap execution across CRM and enterprise SaaS platforms.</li>
+          <li>Manage cross-functional global teams across US, APAC, and EMEA.</li>
+          <li>Drive Agile delivery models ensuring scalable and predictable execution.</li>
+          <li>Align technology initiatives with business goals through strong stakeholder management.</li>
+        </ul>
+
+        <div class="subhead">Major Projects</div>
+        <ul class="bullets">
+          <li><strong>AI Adoption Lead:</strong> Define and drive the AI strategy; lead cross-functional implementation; accelerate organizational adoption and maturity.</li>
+          <li><strong>M&amp;A and Integrations:</strong> Lead end-to-end integration planning; capture synergies and optimize performance; establish integration governance and reporting; drive culture and change alignment.</li>
+          <li><strong>MS Dynamics 365 Implementation (Customer Service Platform):</strong> Led implementation as Program Manager and Functional Lead; delivered on-time and under budget; achieved 27% improvement in ticket resolution efficiency.</li>
+          <li><strong>FinancialForce Implementation (Professional Services Transformation):</strong> Implemented FinancialForce on Salesforce platform replacing legacy systems; improved operational visibility and resource planning; led design, testing, and rollout.</li>
+          <li><strong>LMS Migration to Cornerstone:</strong> Led integration, data conversion, and reporting strategy; introduced Power BI dashboards improving data accessibility.</li>
+          <li><strong>Opportunity Workbook Automation (SaaS Provisioning):</strong> Designed automation platform supporting SaaS provisioning and margin calculation; defined security models, workflows, dashboards, and integrations.</li>
+          <li><strong>Oracle R12 Upgrade &amp; CRM Enhancements:</strong> Led CRM upgrade including 100+ customizations; executed 1000+ system admin tasks during compressed go-live window; recognized by CIO for execution excellence.</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <!-- Role 2 -->
+        <div class="role">
+          <div>
+            <h3>Global CRM &amp; Program Lead</h3>
+            <div class="org">Genpact / GE Energy</div>
+          </div>
+          <div class="dates">2002 – 2011</div>
+        </div>
+
+        <p class="role-desc">
+          Led enterprise Oracle implementations and global CRM transformation programs across energy sector operations.
+        </p>
+
+        <div class="subhead">Key Achievements</div>
+        <ul class="bullets">
+          <li>Managed global CRM implementations across 15+ countries.</li>
+          <li>Led teams of up to 17 resources across US, Germany, Spain, and India.</li>
+          <li>Delivered $3.65M wind energy optimization program.</li>
+          <li>Introduced standardized processes improving operational consistency.</li>
+        </ul>
+
+        <div class="subhead">Major Programs</div>
+        <ul class="bullets">
+          <li>GE Wind Field Optimization (Global CRM Transformation)</li>
+          <li>GE Vetco Gray Oracle R12 Implementation</li>
+          <li>GE Wind Parts Global CRM Implementation</li>
+          <li>GE Wind Clarify Project</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="card">
+        <h2 class="section-title">Areas of Expertise</h2>
+        <ul class="chips">
+          <li>IT Program &amp; Product Management</li>
+          <li>AI Adoption &amp; Digital Transformation</li>
+          <li>Enterprise SaaS &amp; CRM Platforms</li>
+          <li>Agile / Scrum / SAFe Delivery</li>
+          <li>Product Roadmap Execution</li>
+          <li>Stakeholder &amp; Executive Alignment</li>
+          <li>Data-Driven Product Strategy</li>
+          <li>Global Team Leadership</li>
+          <li>Change Management</li>
+          <li>Process Optimization &amp; Automation</li>
+          <li>Customer Experience (CX) Technology</li>
+          <li>Risk &amp; Governance Management</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h2 class="section-title">Education</h2>
+        <div class="edu-item">
+          <strong>Osmania University, India</strong>
+          <div class="small">Master of Computer Applications</div>
+        </div>
+        <div class="edu-item">
+          <strong>Osmania University, India</strong>
+          <div class="small">B.Sc (Electronics)</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-item"><strong>SAFe&reg; Scrum Master 6.0</strong></div>
+        <div class="cert-item"><strong>Certified Six-Sigma Green Belt</strong></div>
+        <div class="cert-item"><strong>Project Management Professional (PMP)</strong></div>
+
+        <div class="divider"></div>
+
+        <h2 class="section-title">Links</h2>
+        <div class="link-item">
+          <a href="https://www.linkedin.com/in/anuja-pulla-43373012/" target="_blank" rel="noreferrer">
+            linkedin.com/in/anuja-pulla-43373012
+          </a>
+        </div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
