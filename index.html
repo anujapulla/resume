@@ -2,381 +2,323 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anuja Pulla — Senior IT Program & Product Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anuja Pulla — Senior IT Director, Applications / Sr. PMO</title>
   <style>
     :root{
       --bg:#0b1220;
       --card:#0f1a2f;
       --ink:#eaf0ff;
       --muted:#b7c4e3;
-      --line:rgba(255,255,255,.12);
-      --accent:#66e3ff;
+      --line:rgba(255,255,255,.14);
+      --accent:#7dd3fc;
       --accent2:#a78bfa;
-      --chip:#132446;
-      --link:#7dd3fc;
+      --chip:rgba(19,36,70,.55);
+      --link:#93c5fd;
     }
     *{box-sizing:border-box}
-    html,body{height:100%}
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(900px 500px at 15% 10%, rgba(102,227,255,.15), transparent 60%),
-                  radial-gradient(900px 500px at 85% 20%, rgba(167,139,250,.14), transparent 60%),
-                  var(--bg);
       color:var(--ink);
-      line-height:1.45;
+      background:
+        radial-gradient(900px 500px at 15% 10%, rgba(125,211,252,.16), transparent 60%),
+        radial-gradient(900px 500px at 85% 20%, rgba(167,139,250,.14), transparent 60%),
+        var(--bg);
+      line-height:1.5;
     }
     a{color:var(--link); text-decoration:none}
     a:hover{text-decoration:underline}
-    .wrap{
-      max-width: 980px;
-      margin: 36px auto;
-      padding: 0 18px 40px;
-    }
-    .topbar{
-      display:flex;
-      gap:16px;
-      align-items:flex-start;
-      justify-content:space-between;
-      padding: 22px 22px;
+    .wrap{max-width:980px; margin:36px auto; padding:0 18px 52px;}
+    header{
       border:1px solid var(--line);
       background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      border-radius: 18px;
-      backdrop-filter: blur(8px);
+      border-radius:18px;
+      padding:22px 22px;
       box-shadow: 0 18px 45px rgba(0,0,0,.25);
     }
-    .name{
-      font-size: 30px;
-      font-weight: 800;
-      letter-spacing:.2px;
-      margin:0 0 6px;
-    }
+    h1{margin:0 0 6px; font-size:32px; letter-spacing:.2px}
     .headline{
       margin:0;
-      font-size: 14px;
-      font-weight: 650;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: .9px;
+      color:var(--muted);
+      font-weight:650;
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing:.9px;
     }
     .meta{
       margin-top:10px;
       display:flex;
       flex-wrap:wrap;
       gap:10px 14px;
-      color: var(--muted);
-      font-size: 13px;
+      color:var(--muted);
+      font-size:13px;
     }
     .pill{
       display:inline-flex;
       align-items:center;
       gap:8px;
-      padding: 7px 10px;
+      padding:7px 10px;
       border:1px solid var(--line);
-      background: rgba(19,36,70,.35);
-      border-radius: 999px;
+      background:rgba(19,36,70,.35);
+      border-radius:999px;
       white-space:nowrap;
+    }
+    .badges{
+      margin-top:12px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
     }
     .badge{
       display:inline-block;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, rgba(102,227,255,.20), rgba(167,139,250,.18));
+      padding:6px 10px;
+      border-radius:999px;
+      background: linear-gradient(90deg, rgba(125,211,252,.22), rgba(167,139,250,.18));
       border:1px solid var(--line);
-      font-size: 12px;
-      color: var(--ink);
-      white-space: nowrap;
+      font-size:12px;
+      color:var(--ink);
+      white-space:nowrap;
     }
 
-    .grid{
-      margin-top: 18px;
-      display:grid;
-      grid-template-columns: 1.35fr .65fr;
-      gap: 18px;
-    }
-    @media (max-width: 860px){
-      .grid{grid-template-columns:1fr}
-    }
+    main{margin-top:18px; display:grid; grid-template-columns:1.35fr .65fr; gap:18px;}
+    @media (max-width:860px){ main{grid-template-columns:1fr;} }
 
-    .card{
+    section, aside{
       border:1px solid var(--line);
       background: rgba(15,26,47,.72);
-      border-radius: 18px;
-      padding: 18px 18px;
+      border-radius:18px;
+      padding:18px 18px;
       box-shadow: 0 18px 45px rgba(0,0,0,.22);
     }
-    .section-title{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
+    h2{
       margin:0 0 12px;
-      font-size: 13px;
-      letter-spacing: .9px;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .divider{
-      height:1px;
-      background: var(--line);
-      margin: 14px 0;
-    }
-    .summary{
-      margin: 0;
-      font-size: 14.5px;
-      color: rgba(234,240,255,.92);
-    }
-    .chips{
+      font-size:13px;
+      letter-spacing:.9px;
+      text-transform:uppercase;
+      color:var(--muted);
       display:flex;
-      flex-wrap:wrap;
-      gap: 8px;
-      margin: 0;
-      padding: 0;
-      list-style:none;
-    }
-    .chips li{
-      padding: 7px 10px;
-      border-radius: 999px;
-      background: rgba(19,36,70,.60);
-      border:1px solid var(--line);
-      color: rgba(234,240,255,.92);
-      font-size: 12.5px;
-    }
-
-    .role{
-      display:flex;
-      align-items:flex-start;
       justify-content:space-between;
+      align-items:center;
       gap:10px;
-      margin-top: 6px;
     }
-    .role h3{
-      margin:0;
-      font-size: 16px;
-      font-weight: 800;
-    }
-    .role .org{
-      color: var(--muted);
-      font-weight: 650;
-      font-size: 13px;
-      margin-top: 2px;
-    }
-    .role .dates{
-      font-size: 12.5px;
-      color: var(--muted);
-      white-space:nowrap;
-      margin-top: 2px;
-    }
-    .role-desc{
-      margin: 10px 0 0;
-      color: rgba(234,240,255,.90);
-      font-size: 14px;
-    }
-    ul.bullets{
-      margin: 10px 0 0 18px;
-      padding:0;
-      color: rgba(234,240,255,.90);
-      font-size: 14px;
-    }
-    ul.bullets li{margin: 6px 0}
+    .divider{height:1px; background:var(--line); margin:14px 0;}
+    .summary{margin:0; font-size:14.5px; color:rgba(234,240,255,.92);}
+
+    .role{display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-top:6px;}
+    .role h3{margin:0; font-size:16px; font-weight:800;}
+    .org{color:var(--muted); font-weight:650; font-size:13px; margin-top:2px;}
+    .dates{font-size:12.5px; color:var(--muted); white-space:nowrap; margin-top:2px;}
+    .role-desc{margin:10px 0 0; color:rgba(234,240,255,.90); font-size:14px;}
     .subhead{
-      margin: 12px 0 6px;
-      color: var(--muted);
-      font-weight: 750;
-      font-size: 12.5px;
-      text-transform: uppercase;
+      margin:12px 0 6px;
+      color:var(--muted);
+      font-weight:750;
+      font-size:12.5px;
+      text-transform:uppercase;
       letter-spacing:.8px;
     }
-
-    .edu-item, .cert-item, .link-item{
-      padding: 10px 12px;
-      border-radius: 14px;
-      border: 1px solid var(--line);
+    ul{margin:10px 0 0 18px; padding:0; color:rgba(234,240,255,.90); font-size:14px;}
+    li{margin:6px 0;}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:0; list-style:none;}
+    .chips li{
+      padding:7px 10px;
+      border-radius:999px;
+      background:var(--chip);
+      border:1px solid var(--line);
+      font-size:12.5px;
+      color:rgba(234,240,255,.92);
+    }
+    .box{
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
       background: rgba(19,36,70,.40);
-      margin: 10px 0 0;
+      margin-top:10px;
     }
-    .edu-item strong{display:block}
-    .small{
-      color: var(--muted);
-      font-size: 12.5px;
-      margin-top: 2px;
-    }
+    .box strong{display:block;}
+    .small{color:var(--muted); font-size:12.5px; margin-top:2px;}
 
-    /* Print */
+    /* Print-friendly */
     @media print{
       :root{
-        --bg:#ffffff;
-        --card:#ffffff;
-        --ink:#0b1220;
-        --muted:#334155;
-        --line:#e5e7eb;
-        --chip:#f1f5f9;
-        --link:#0ea5e9;
+        --bg:#ffffff; --card:#ffffff; --ink:#0b1220; --muted:#334155; --line:#e5e7eb; --chip:#f1f5f9; --link:#0ea5e9;
       }
       body{background:#fff}
-      .wrap{margin:0; max-width:100%; padding: 0}
-      .topbar,.card{box-shadow:none; backdrop-filter:none}
-      a{color: #0ea5e9; text-decoration:none}
+      header, section, aside{box-shadow:none}
+      a{color:#0ea5e9}
       .badge{background:#f1f5f9}
     }
   </style>
 </head>
 
 <body>
-  <main class="wrap">
-    <header class="topbar">
-      <div>
-        <h1 class="name">Anuja Pulla</h1>
-        <p class="headline">Senior IT Program &amp; Product Manager | AI Adoption Leader | Enterprise Transformation | SaaS &amp; CRM Platforms</p>
+  <div class="wrap">
+    <header>
+      <h1>Anuja Pulla</h1>
+      <p class="headline">Senior IT Director, Applications / Sr. PMO Leader | AI Adoption | Enterprise Platforms | CRM / ERP / SaaS | M&amp;A Integration</p>
 
-        <div class="meta" aria-label="Contact">
-          <span class="pill">📍 Atlanta, Georgia 30024, United States</span>
-          <a class="pill" href="tel:+14047897832">📞 404-789-7832</a>
-          <a class="pill" href="mailto:anuja.pulla@gmail.com">✉️ anuja.pulla@gmail.com</a>
-          <span class="pill">🪪 Green Card Holder</span>
-          <a class="pill" href="https://www.linkedin.com/in/anuja-pulla-43373012/" target="_blank" rel="noreferrer">🔗 LinkedIn</a>
-        </div>
+      <div class="meta">
+        <span class="pill">📍 Atlanta, Georgia 30024, United States</span>
+        <a class="pill" href="tel:+14047897832">📞 404-789-7832</a>
+        <a class="pill" href="mailto:anuja.pulla@gmail.com">✉️ anuja.pulla@gmail.com</a>
+        <span class="pill">🪪 Green Card Holder</span>
+        <a class="pill" href="https://www.linkedin.com/in/anuja-pulla-43373012/" target="_blank" rel="noreferrer">🔗 LinkedIn</a>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-end;">
-        <span class="badge">AI Adoption • CRM/SaaS • Global Programs</span>
-        <span class="badge">Agile / Scrum / SAFe • M&amp;A Integration</span>
+      <div class="badges">
+        <span class="badge">Applications Portfolio Leadership</span>
+        <span class="badge">Budget Ownership • Vendor Negotiation</span>
+        <span class="badge">AI Adoption • CRM/SaaS • ERP</span>
+        <span class="badge">Agile / Scrum / SAFe • PMO Governance</span>
+        <span class="badge">M&amp;A Integration • Time-to-Market ↓31.5%</span>
       </div>
     </header>
 
-    <section class="grid">
-      <!-- LEFT COLUMN -->
-      <div class="card">
-        <h2 class="section-title">Profile</h2>
+    <main>
+      <!-- LEFT -->
+      <section>
+        <h2>Profile</h2>
         <p class="summary">
-          Senior IT Program and Product Manager with 20+ years of experience leading enterprise-scale technology
-          transformation initiatives across CRM, SaaS, ERP, and AI-enabled platforms. Proven track record delivering
-          complex global programs from strategy through execution while aligning technology solutions with measurable
-          business outcomes. Currently leading AI adoption initiatives at Verint, driving integration of AI capabilities
-          into enterprise workflows to enhance customer experience, operational efficiency, and data-driven decision-making.
-          Experienced M&amp;A Integration Program Manager, leading post-acquisition technology and operational integration to
-          accelerate synergy realization and ensure seamless organizational alignment. Expert in bridging business strategy and
-          technical delivery — translating complex requirements into scalable solutions through Agile methodologies, stakeholder
-          alignment, and disciplined program governance.
+          Senior Director-level IT Applications and PMO leader with 20+ years of experience delivering enterprise-scale
+          digital transformation across CRM, SaaS, ERP, OT-adjacent platforms, and AI-enabled enterprise applications.
+          Proven track record managing global application portfolios, leading complex multi-vendor ecosystems, and driving
+          strategic programs aligned to business outcomes, operational scalability, and measurable ROI.
+          <br><br>
+          Expert in application lifecycle governance, modernization initiatives, and integrations across customer engagement,
+          service operations, finance/PSA, and learning platforms. Known for building high-performing global teams, managing
+          multi-million-dollar budgets, negotiating vendor contracts, and executing enterprise integrations including M&amp;A-driven
+          transformations — bridging architecture, delivery, and business strategy for predictable execution and value realization.
         </p>
 
         <div class="divider"></div>
 
-        <h2 class="section-title">Professional Experience</h2>
+        <h2>Professional Experience</h2>
 
-        <!-- Role 1 -->
         <div class="role">
           <div>
-            <h3>Senior IT Program &amp; Product Manager / AI Adoption Lead</h3>
+            <h3>Senior IT Director / Applications &amp; PMO Leader — AI Adoption Lead</h3>
             <div class="org">Verint Systems</div>
           </div>
           <div class="dates">2011 – Present</div>
         </div>
 
         <p class="role-desc">
-          Lead enterprise technology initiatives focused on SaaS platforms, CRM systems, and AI-driven transformation programs within customer engagement environments.
+          Lead enterprise applications portfolio and PMO governance delivering global initiatives across customer engagement,
+          CRM, finance/PSA, learning platforms, automation, and AI-enabled transformation programs.
         </p>
 
-        <div class="subhead">Key Contributions</div>
-        <ul class="bullets">
-          <li>Lead AI adoption initiatives integrating AI capabilities into enterprise workflows to improve customer engagement, operational efficiency, and analytics-driven decision making.</li>
-          <li>Define product strategy and roadmap execution across CRM and enterprise SaaS platforms.</li>
-          <li>Manage cross-functional global teams across US, APAC, and EMEA.</li>
-          <li>Drive Agile delivery models ensuring scalable and predictable execution.</li>
-          <li>Align technology initiatives with business goals through strong stakeholder management.</li>
+        <div class="subhead">Executive Leadership &amp; Governance</div>
+        <ul>
+          <li>Directed enterprise applications strategy spanning CRM, finance/PSA, learning platforms, and automation ecosystems; ensured alignment to architecture, security, and business outcomes.</li>
+          <li>Owned program governance including roadmap prioritization, risk management, operating cadence, and executive reporting across global stakeholders.</li>
+          <li>Led cross-functional delivery across US, APAC, and EMEA; established PMO frameworks improving predictability, transparency, and delivery velocity.</li>
+          <li>Drove OT-adjacent operational enablement through field/service workflow modernization, asset/service data visibility, and integration patterns that improved handoffs between operations and enterprise platforms.</li>
         </ul>
 
-        <div class="subhead">Major Projects</div>
-        <ul class="bullets">
-          <li><strong>AI Adoption Lead:</strong> Define and drive the AI strategy; lead cross-functional implementation; accelerate organizational adoption and maturity.</li>
-          <li><strong>M&amp;A and Integrations:</strong> Lead end-to-end integration planning; capture synergies and optimize performance; establish integration governance and reporting; drive culture and change alignment.</li>
-          <li><strong>MS Dynamics 365 Implementation (Customer Service Platform):</strong> Led implementation as Program Manager and Functional Lead; delivered on-time and under budget; achieved 27% improvement in ticket resolution efficiency.</li>
-          <li><strong>FinancialForce Implementation (Professional Services Transformation):</strong> Implemented FinancialForce on Salesforce platform replacing legacy systems; improved operational visibility and resource planning; led design, testing, and rollout.</li>
-          <li><strong>LMS Migration to Cornerstone:</strong> Led integration, data conversion, and reporting strategy; introduced Power BI dashboards improving data accessibility.</li>
-          <li><strong>Opportunity Workbook Automation (SaaS Provisioning):</strong> Designed automation platform supporting SaaS provisioning and margin calculation; defined security models, workflows, dashboards, and integrations.</li>
-          <li><strong>Oracle R12 Upgrade &amp; CRM Enhancements:</strong> Led CRM upgrade including 100+ customizations; executed 1000+ system admin tasks during compressed go-live window; recognized by CIO for execution excellence.</li>
+        <div class="subhead">Budget Ownership &amp; Vendor Management</div>
+        <ul>
+          <li>Managed multi-million-dollar annual program budgets with portfolio-level financial governance, benefits tracking, and ROI accountability.</li>
+          <li>Led vendor selection, contract negotiations, licensing strategy, and vendor performance management across software vendors, SIs, and consulting partners.</li>
+          <li>Implemented cost optimization and scope governance practices to reduce spend while improving delivery outcomes and platform adoption.</li>
+        </ul>
+
+        <div class="subhead">Key Strategic Programs &amp; Enterprise Transformation Outcomes</div>
+        <ul>
+          <li><strong>AI Adoption &amp; Enterprise Automation Strategy:</strong> Defined and executed enterprise AI adoption roadmap integrating automation and analytics into customer engagement and service operations; strengthened governance for scalable adoption and measurable productivity outcomes.</li>
+
+          <li><strong>Enterprise M&amp;A Applications Integration Program:</strong> Directed post-acquisition integration strategy aligning CRM, finance, and operational platforms across acquired business units; reduced integration time-to-market by <strong>31.5%</strong> through a standardized integration playbook, governance model, and vendor coordination.</li>
+
+          <li><strong>Microsoft Dynamics 365 Global Implementation &amp; Optimization:</strong> Led global implementation and optimization of Dynamics 365 Customer Service; negotiated licensing and SI services to drive an estimated <strong>$4.8M reduction in projected platform spend</strong> (multi-year); improved service workflows delivering a <strong>27% improvement</strong> in ticket resolution efficiency.</li>
+
+          <li><strong>FinancialForce Transformation (Salesforce Ecosystem Modernization):</strong> Directed enterprise rollout of FinancialForce PSA replacing fragmented legacy tooling; enabled forecasting, billing automation, and utilization analytics contributing to an estimated <strong>$7.2M increase in revenue realization</strong> through improved margin control, billing accuracy, and services delivery visibility.</li>
+
+          <li><strong>Cornerstone LMS Migration &amp; Data Modernization:</strong> Led LMS migration with integrations and reporting modernization; implemented Power BI analytics improving real-time learning visibility and reducing manual reporting overhead.</li>
+
+          <li><strong>Opportunity Workbook Automation (SaaS Provisioning):</strong> Designed automation platform supporting SaaS provisioning and margin calculation; implemented security models, workflow automation, dashboards, and integrations to improve operational speed and governance.</li>
+
+          <li><strong>Oracle R12 Enterprise Upgrade &amp; CRM Enhancements:</strong> Directed enterprise Oracle R12 upgrade valued at approximately <strong>$15M</strong>; achieved <strong>$3.23M savings</strong> via vendor negotiations, scope rationalization, and delivery efficiency; oversaw extensive CRM enhancements including <strong>100+ customizations</strong> supporting global operations.</li>
         </ul>
 
         <div class="divider"></div>
 
-        <!-- Role 2 -->
         <div class="role">
           <div>
-            <h3>Global CRM &amp; Program Lead</h3>
+            <h3>Global CRM Director / Program Leader</h3>
             <div class="org">Genpact / GE Energy</div>
           </div>
           <div class="dates">2002 – 2011</div>
         </div>
 
         <p class="role-desc">
-          Led enterprise Oracle implementations and global CRM transformation programs across energy sector operations.
+          Led global enterprise CRM and ERP modernization programs supporting multi-country operations, including large-scale delivery across energy sector business units.
         </p>
 
         <div class="subhead">Key Achievements</div>
-        <ul class="bullets">
-          <li>Managed global CRM implementations across 15+ countries.</li>
-          <li>Led teams of up to 17 resources across US, Germany, Spain, and India.</li>
-          <li>Delivered $3.65M wind energy optimization program.</li>
-          <li>Introduced standardized processes improving operational consistency.</li>
+        <ul>
+          <li>Managed global CRM implementations across 15+ countries and complex stakeholder environments.</li>
+          <li>Led teams of up to 17 resources across US, Germany, Spain, and India, driving consistent delivery governance.</li>
+          <li>Delivered a <strong>$3.65M</strong> wind energy optimization program improving operational performance and standardizing processes.</li>
+          <li>Directed enterprise Oracle implementations and CRM standardization initiatives supporting field/service operations and commercial teams.</li>
         </ul>
 
         <div class="subhead">Major Programs</div>
-        <ul class="bullets">
+        <ul>
           <li>GE Wind Field Optimization (Global CRM Transformation)</li>
           <li>GE Vetco Gray Oracle R12 Implementation</li>
           <li>GE Wind Parts Global CRM Implementation</li>
           <li>GE Wind Clarify Project</li>
         </ul>
-      </div>
+      </section>
 
-      <!-- RIGHT COLUMN -->
-      <aside class="card">
-        <h2 class="section-title">Areas of Expertise</h2>
+      <!-- RIGHT -->
+      <aside>
+        <h2>Areas of Expertise</h2>
         <ul class="chips">
-          <li>IT Program &amp; Product Management</li>
-          <li>AI Adoption &amp; Digital Transformation</li>
-          <li>Enterprise SaaS &amp; CRM Platforms</li>
-          <li>Agile / Scrum / SAFe Delivery</li>
-          <li>Product Roadmap Execution</li>
-          <li>Stakeholder &amp; Executive Alignment</li>
-          <li>Data-Driven Product Strategy</li>
-          <li>Global Team Leadership</li>
-          <li>Change Management</li>
-          <li>Process Optimization &amp; Automation</li>
-          <li>Customer Experience (CX) Technology</li>
-          <li>Risk &amp; Governance Management</li>
+          <li>Enterprise Applications Leadership</li>
+          <li>PMO Strategy &amp; Governance</li>
+          <li>Portfolio &amp; Program Management</li>
+          <li>Budget Ownership &amp; Financial Governance</li>
+          <li>Vendor Negotiations &amp; Contract Strategy</li>
+          <li>AI Adoption &amp; Automation</li>
+          <li>CRM / ERP Modernization</li>
+          <li>Enterprise SaaS Platforms</li>
+          <li>M&amp;A Technology Integration</li>
+          <li>Global Delivery Leadership</li>
+          <li>Agile / Scrum / SAFe</li>
+          <li>Risk &amp; Change Management</li>
+          <li>OT-Adjacent Workflow Enablement</li>
         </ul>
 
         <div class="divider"></div>
 
-        <h2 class="section-title">Education</h2>
-        <div class="edu-item">
+        <h2>Education</h2>
+        <div class="box">
           <strong>Osmania University, India</strong>
           <div class="small">Master of Computer Applications</div>
         </div>
-        <div class="edu-item">
+        <div class="box">
           <strong>Osmania University, India</strong>
           <div class="small">B.Sc (Electronics)</div>
         </div>
 
         <div class="divider"></div>
 
-        <h2 class="section-title">Certifications</h2>
-        <div class="cert-item"><strong>SAFe&reg; Scrum Master 6.0</strong></div>
-        <div class="cert-item"><strong>Certified Six-Sigma Green Belt</strong></div>
-        <div class="cert-item"><strong>Project Management Professional (PMP)</strong></div>
+        <h2>Certifications</h2>
+        <div class="box"><strong>SAFe&reg; Scrum Master 6.0</strong></div>
+        <div class="box"><strong>Certified Six-Sigma Green Belt</strong></div>
+        <div class="box"><strong>Project Management Professional (PMP)</strong></div>
 
         <div class="divider"></div>
 
-        <h2 class="section-title">Links</h2>
-        <div class="link-item">
+        <h2>Links</h2>
+        <div class="box">
           <a href="https://www.linkedin.com/in/anuja-pulla-43373012/" target="_blank" rel="noreferrer">
             linkedin.com/in/anuja-pulla-43373012
           </a>
         </div>
       </aside>
-    </section>
-  </main>
+    </main>
+  </div>
 </body>
 </html>
